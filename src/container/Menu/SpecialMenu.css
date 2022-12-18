@@ -1,0 +1,35 @@
+.app__specialMenu {
+  background: var(--color-black);
+}
+.app__specialMenu-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.app__specialMenu-menu {
+  display: flex;
+  justify-content: center;
+}
+
+.app__specialMenu-menu__wineBear , .app__specialMenu-menu__cocktails {
+    flex: 1;
+}
+.app__specialMenu-menu__cocktails h1,
+.app__specialMenu-menu__wineBear h1 {
+  color: var(--color-white);
+
+  font-size: 45px;
+  margin-bottom: 2rem;
+
+  text-align: center;
+}
+.app__specialMenu-image{
+  width: 412px;
+  height: 660px;
+  margin: 0 2rem;
+}
+
+.app__specialMenu-image img{
+    width: 100%;
+    height: auto;
+}

@@ -1,0 +1,129 @@
+.app__navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--color-black);
+
+  width: 100%;
+  padding: 1rem 2rem;
+}
+.app__navBar-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app__navBar-links {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  list-style: none;
+}
+.app__navBar-links li {
+  margin: 0 1rem;
+
+  text-decoration: none;
+  cursor: pointer;
+}
+.app__navBar-links li:hover {
+  color: var(--color-grey);
+}
+.app__navBar-login {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.app__navBar-login a {
+  margin: 0 1rem;
+
+  text-decoration: none;
+  transition: 0.5s ease;
+}
+
+.app__navBar-login a:hover {
+  border-bottom: 1px solid var(--color-golden);
+}
+.app__navBar-login div {
+  width: 1px;
+  height: 30px;
+
+  background-color: var(--color-grey);
+}
+.app__navBar-smallscreen {
+  display: none;
+}
+.app__navbar-smallscreen_overlay {
+  position: fixed;
+
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  transition: 0.5 ease;
+  z-index: 5;
+
+  width: 100%;
+  height: 100vh;
+
+  background: var(--color-black);
+}
+.app__navbar-smallscreen_overlay .overlay__close {
+  font-size: 27px;
+  color: var(--color-golden);
+  cursor: pointer;
+
+  position: absolute;
+  top: 20px;
+  right: 10px;
+}
+
+.app__navBar-smallscreen_links {
+  list-style: none;
+}
+.app__navBar-smallscreen_links li {
+  cursor: pointer;
+  margin: 2rem;
+  text-align: center;
+}
+.app__navBar-smallscreen_links li a {
+  font-family: var(--font-base);
+  color: var(--color-golden);
+  font-size: 2rem;
+  text-decoration: none;
+}
+.app__navBar-smallscreen_links li a:hover {
+  color: var(--color-golden);
+  font-size: 2rem;
+  color: var(--color-white);
+}
+@media screen and (max-width: 2000px) {
+  .app__navBar-logo img {
+    width: 200px;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .app__navBar-links {
+    display: none;
+  }
+  .app__navBar-smallscreen {
+    display: flex;
+  }
+  
+.app__navBar-logo img {
+  width: 150px;
+}
+}
+@media screen and (max-width: 650px) {
+  .app__navBar {
+    padding: 1rem;
+  }
+  .app__navBar-logo img {
+    width: 100px;
+  }
+  .app__navBar-login {
+    display: none;
+  }
+}

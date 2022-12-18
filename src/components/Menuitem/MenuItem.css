@@ -1,0 +1,30 @@
+.menu__menuItem {
+  width: 100%;
+
+  margin-bottom: 2rem;
+}
+.menu__menuItem-head {
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 0.8rem;
+}
+
+.menu__menuItem-head__name {
+  flex: 1;
+
+  color: var(--color-golden) !important;
+}
+.menu__menuItem-head__dash {
+  width: 119px;
+  height: 1px;
+
+  background: #fafafa;
+}
+.menu__menuItem-head__price {
+  margin-left: 1rem;
+}
+.menu__menuItem-tags p {
+  font-weight: 400;
+  font-size: 16px;
+}
