@@ -1,7 +1,8 @@
 .menu__menuItem {
   width: 100%;
 
-  margin-bottom: 2rem;
+
+  margin-bottom: 1rem 0;
 }
 .menu__menuItem-head {
   display: flex;
@@ -13,7 +14,7 @@
 .menu__menuItem-head__name {
   flex: 1;
 
-  color: var(--color-golden) !important;
+  color: var(--color-golden) !importat;
 }
 .menu__menuItem-head__dash {
   width: 119px;
